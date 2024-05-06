@@ -1,0 +1,117 @@
+.omniVersePlayer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background-image: linear-gradient(
+    to top,
+    #1c1b29,
+    #1a1926,
+    #181824,
+    #171621,
+    #15141f
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  z-index: 105;
+  box-shadow: rgba(17, 17, 26, 0.596) 0px -10px 16px;
+  box-sizing: border-box;
+}
+.play-pause {
+  all: unset;
+
+  cursor: pointer;
+}
+.nextOnQueue,
+.previousOnQueue {
+  all: unset;
+  cursor: pointer;
+}
+.volumeSet {
+  width: 10vw;
+}
+.volumeSet,
+.progressBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.progressBar {
+  width: 60%;
+}
+.volumeSet input,
+.progressBar input {
+  appearance: none;
+  border-radius: 10px;
+  height: 5px;
+  width: 100%;
+  background-color: #000013;
+}
+.volumeSet input::-webkit-slider-thumb,
+.progressBar input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.TrackCover {
+  width: 60px;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.refreshYoutube,
+.toShowAlbum {
+  cursor: pointer;
+}
+.progressBar span,
+.volumeSet span {
+  display: block;
+  max-height: 17px;
+  min-height: 17px;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+.showOnQueue {
+  display: none;
+  position: absolute;
+}
+.toShowAlbum:hover .showOnQueue {
+  display: inline;
+}
+.progressBar input::-webkit-progress-value {
+  background: #ffffff;
+}
+.range-container {
+  position: relative;
+  width: 100%;
+}
+.progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.308);
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+  .volumeSet {
+    display: none;
+  }
+  .progressBar {
+    width: 50%;
+  }
+  #VideoThumbnail {
+    display: none;
+  }
+}

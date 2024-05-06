@@ -1,0 +1,88 @@
+.FilteredItems {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 1% 5%;
+  margin-top: 20px;
+  margin-bottom: 10vh;
+  box-sizing: border-box;
+}
+.FilteredItems a {
+  all: unset;
+  cursor: pointer;
+}
+.ItemCard {
+  border: 1px #1c1b2977 solid;
+  border-radius: 4%;
+  height: 250px;
+  width: 200px;
+  padding-top: 7%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.3s, background-color 0.3s;
+  position: relative;
+}
+.FilteredItemPic {
+  width: 85%;
+  height: 70%;
+  object-fit: cover;
+}
+.ItemCard abbr {
+  all: unset;
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to top, black, transparent);
+}
+.ItemCard h4 {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+}
+.ItemCard:hover {
+  background-color: rgba(233, 241, 255, 0.01);
+  box-shadow: 0px 0px 5px -1px rgba(210, 235, 255, 0.5);
+}
+.loadingGif {
+  margin: 0 35%;
+}
+
+.releaseLoading {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 30% 0;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+#backToTop {
+  all: unset;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 1.5vw;
+  bottom: 15vh;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+#backToTop:hover {
+  filter: drop-shadow(0 0 10px white);
+}

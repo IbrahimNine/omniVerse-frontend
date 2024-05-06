@@ -1,0 +1,17 @@
+.intro {
+  width: 85%;
+  margin: 0 auto 11% auto;
+  font-size: large;
+  padding-right: 30%;
+  box-sizing: border-box;
+  text-shadow: 0 0 10px black;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+@media (max-width: 1200px) {
+  .intro {
+    padding-right: 10%;
+    background-size: contain;
+    margin-bottom: 25%;
+  }
+}

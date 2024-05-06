@@ -1,0 +1,37 @@
+.Notifications {
+  position: fixed;
+  right: 0;
+  bottom: 10vh;
+  height: 70px;
+  width: 30vw;
+  /* background-color: #11111afa; */
+  background-image: linear-gradient(
+    to bottom,
+    #1c1b29,
+    #1a1926,
+    #181824,
+    #171621,
+    #15141f
+  );
+  border-radius: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+  box-sizing: border-box;
+  /* border: 1px #28283d8f solid; */
+  border-top: 1px #28283d8f solid;
+  border-left: 1px #28283d8f solid;
+  border-bottom: 1px #28283d8f solid;
+  z-index: 999;
+}
+.notifWrapper {
+  width: 20vw;
+  min-width: 20vw;
+  max-width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

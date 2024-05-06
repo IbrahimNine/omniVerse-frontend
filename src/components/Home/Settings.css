@@ -1,0 +1,103 @@
+.SettingsWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 99;
+}
+.Settings {
+  width: 40vw;
+  height: 70vh;
+  border-radius: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  /* background-color: #11111afa; */
+  background-color: rgb(17, 19, 27);
+  box-shadow: 0px 25px 50px -10px rgba(50, 50, 93, 0.25),
+    0px 20px 50px -20px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 15px 0px rgba(3, 4, 7, 0.507);
+}
+.Settings input {
+  width: 80%;
+  height: 10%;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: rgba(2, 2, 2, 0.5);
+  padding: 0 15px;
+  color: white;
+  box-sizing: border-box;
+}
+#GeneralSettings {
+  margin-bottom: 0.2em;
+}
+.inputPicLayer {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  gap: 5%;
+}
+.inputPicLayer p {
+  width: 20%;
+}
+.inputPicLayer input {
+  width: 50%;
+  height: 100%;
+  padding: 10px 15px;
+}
+.inputPicLayer abbr svg {
+  cursor: pointer;
+}
+.SettingsBtns {
+  width: 80%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  margin-top: 5%;
+}
+.Settings button {
+  all: unset;
+  width: 40%;
+  height: 90%;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 10px rgba(128, 128, 128, 0.226);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.Settings button:hover {
+  background-color: rgba(0, 4, 24, 0.5);
+}
+#unableSubmit {
+  cursor: unset;
+  color: rgb(61, 61, 61);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1200px) {
+  .Settings {
+    width: 600px;
+    height: 425px;
+  }
+  .Settings button,
+  .Settings input {
+    height: 46px;
+  }
+}

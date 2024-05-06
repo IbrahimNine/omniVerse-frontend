@@ -1,0 +1,20 @@
+.FullSizePhoto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.596);
+  z-index: 109;
+}
+.FullSizePhotoImg {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.301);
+  height: fit-content;
+}
+.FullSizePhotoImg img {
+  max-height: 90vh;
+  width: auto;
+}

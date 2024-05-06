@@ -1,0 +1,259 @@
+.UserWrapper {
+  margin: 15vh auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+.User {
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(184, 211, 255, 0.061);
+  box-shadow: 0px 25px 50px -10px rgba(50, 50, 93, 0.25),
+    0px 20px 50px -20px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 10px 0px rgba(10, 37, 64, 0.35);
+  height: 75vh;
+  max-width: 1330px;
+}
+.userDetailedData {
+  width: 65%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #00060e4f;
+  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.75) inset,
+    0 -20px 10px -20px rgba(0, 0, 0, 0.75) inset;
+}
+.mostPlayedWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  width: 100%;
+  min-height: 360px;
+  margin-top: 2%;
+  margin-bottom: 2.5em;
+}
+.mostPlayedCardWrapper {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
+}
+
+.mostPlayed {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}
+.mostPlayed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mostPlayedDetails {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 5%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, black, transparent);
+  box-shadow: 0 -20px 30px -10px black inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.mostPlayedDetails a {
+  all: unset;
+}
+.mostPlayedDetails h4,
+.mostPlayedDetails h5,
+.mostPlayedDetails h3 {
+  margin: 5px 0;
+  text-shadow: 0 0 10 black;
+}
+.mostPlayedDetails h5,
+.mostPlayedDetails h3 {
+  cursor: pointer;
+}
+.mostPlayedImg {
+  filter: contrast(100%) brightness(100%);
+  transition: transform 0.5s;
+}
+.mostPlayed:hover .mostPlayedImg {
+  transform: scale(1.09);
+}
+.UserDetailedDash {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 90%;
+  box-sizing: border-box;
+  padding: 0 2%;
+  position: relative;
+}
+.UserDetailedDash #userProfilePic {
+  width: 95%;
+  height: 65%;
+  border-radius: 3%;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 30px rgba(14, 14, 19, 255);
+}
+.UserDetailedDash h4,
+.UserDetailedDash h3 {
+  margin: 12px 0;
+}
+.UserDetailedDash p {
+  margin: auto 0 0 0;
+}
+
+.PlayedData {
+  width: 95%;
+  min-height: 90px;
+  margin: 7px 0;
+  box-sizing: border-box;
+  color: inherit;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  text-shadow: 0 0 5px black;
+}
+.PlayedDataWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px) grayscale(0%) contrast(100%);
+  transition: backdrop-filter 0.5s;
+}
+.PlayedData img {
+  height: 80%;
+  width: 72px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.PlayedDataWrapper:hover {
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.616), inset 0 0 10px rgba(0, 0, 0, 0.616),
+    0px 10px 5px -10px rgba(210, 235, 255, 0.45),
+    0px -10px 5px -10px rgba(210, 235, 255, 0.45); */
+  backdrop-filter: blur(10px) grayscale(90%) contrast(120%);
+}
+.recordDetails {
+  margin-right: auto;
+  margin-left: 2%;
+  width: 50%;
+}
+#listenedArtists {
+  width: 100%;
+  min-height: 20%;
+  box-sizing: border-box;
+  margin: 0;
+  text-shadow: 0 0 5px black;
+  position: sticky;
+  left: 0;
+  top: -2px;
+  background-color: #0a0b0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  z-index: 1;
+}
+.listenedArtistsTools {
+  width: 37%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listenedArtistsTools input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.062);
+  color: white;
+  width: 60%;
+  font-size: 1em;
+  transition: border-bottom 0.3s;
+}
+.listenedArtistsTools input:focus {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.listenedArtistsTools select {
+  width: 40%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: grey;
+  border-radius: 5px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.listenedArtistsTools option {
+  color: white;
+  background-color: #27292def;
+}
+
+@media (max-width: 1200px) {
+  .UserWrapper {
+    width: 100%;
+    margin-bottom: 9.5vh;
+    box-sizing: border-box;
+  }
+  .User {
+    flex-direction: column;
+    width: 99vw;
+    height: fit-content;
+    padding: 3% 0;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  .UserDetailedDash {
+    width: 90%;
+  }
+  .UserDetailedDash p {
+    margin: 15px;
+  }
+  .userDetailedData {
+    width: 95%;
+    overflow: visible;
+  }
+  .mostPlayedWrapper {
+    gap: 1%;
+    min-height: 400px;
+    box-sizing: border-box;
+  }
+  .mostPlayedCardWrapper {
+    width: 31%;
+    min-height: 100%;
+  }
+  .PlayedData {
+    height: 170px;
+  }
+  .PlayedData img {
+    height: 90%;
+    width: 153px;
+  }
+}

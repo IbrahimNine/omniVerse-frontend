@@ -1,0 +1,23 @@
+.Music .contents {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* transition: padding-left 1.5s; */
+}
+
+.FilteringBtns button {
+  all: unset;
+  padding: 10px 15px;
+  margin: 0 20px;
+  border: 1px white solid;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+@media (max-width: 1200px) {
+  .Music .contents {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+body::-webkit-scrollbar-track {
+  background-image: linear-gradient(to bottom, #020202 70%, #1c1b29 100%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 30px;
+}
+
+:root {
+  --main-color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+  margin: 0;
+}
+.App {
+  background-color: #020202;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  font-family: "Roboto Condensed", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+.Home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Login,
+.Register {
+  margin: 20vh auto;
+}
+
+.Login h2,
+.Register h2 {
+  margin: 3%;
+}
+.Login form,
+.Register form {
+  border-radius: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(184, 211, 255, 0.061);
+  box-shadow: 0px 25px 50px -10px rgba(50, 50, 93, 0.25),
+    0px 20px 50px -20px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 10px 0px rgba(10, 37, 64, 0.35);
+  height: 60vh;
+  width: 35vw;
+  flex-direction: column;
+  gap: 3%;
+}
+
+.Login input,
+.Register input {
+  width: 80%;
+  height: 10%;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: rgba(2, 2, 2, 0.5);
+  padding: 0 15px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.Login button,
+.Register button {
+  all: unset;
+  width: 40%;
+  height: 12%;
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 10px rgba(128, 128, 128, 0.226);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.Login button:hover,
+.Register button:hover {
+  background-color: rgba(0, 4, 24, 0.5);
+}
+.Login a,
+.Register a {
+  all: unset;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.NotFound {
+  max-width: 1330px;
+  min-height: 70vh;
+  margin: 90px auto 10vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+.styledTitle,
+.toGray {
+  color: rgba(255, 255, 255, 0.651);
+}
+.privacy-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: darkblue;
+  z-index: 11;
+}
+@media (max-width: 1200px) {
+  .App {
+    width: 100%;
+  }
+  .Login form,
+  .Register form {
+    width: 478px;
+  }
+  .Login button,
+  .Register button {
+    height: 55px;
+  }
+}
