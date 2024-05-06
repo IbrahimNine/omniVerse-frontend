@@ -13,7 +13,7 @@ function Intro() {
         ease: "easeOut",
       }}
       className="intro"
-      style={{ backgroundImage: "url(/introBgPic.gif)" }}
+      style={{ backgroundImage: "url(/IntroBgPic.gif)" }}
     >
       <h2>
         Escape the endless stream. Own your sound. (or) Ditch the shuffle, build
