@@ -64,7 +64,12 @@ function App() {
   }, [inactiveTime, play]);
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={
+        isVisible === false ? null : { height: "100vh", overflow: "hidden" }
+      }
+    >
       <Navbar />
       <Routes>
         <Route path="/" element={<Home isVisible={isVisible} />} key="/" />

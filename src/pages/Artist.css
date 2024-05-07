@@ -119,7 +119,7 @@
 @media (max-width: 1200px) {
   .Artist {
     flex-direction: column;
-    /* height: fit-content; */
+    height: 80vh;
   }
   .Artist aside {
     width: 90%;
@@ -128,10 +128,14 @@
   }
   .ArtistReleasesWrapper {
     width: 99%;
-
+    height: 40%;
   }
-  /* .Artist section {
-    overflow: visible;
-   
-  } */
+}
+@media (max-width: 800px) {
+  .Artist {
+    height: 85vh;
+  }
+  .ArtistReleasesWrapper {
+    height: 65%;
+  }
 }

@@ -35,3 +35,23 @@
   align-items: center;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .Notifications {
+    width: 50vw;
+  }
+  .notifWrapper {
+    width: 40vw;
+    min-width: 40vw;
+    max-width: 40vw;
+  }
+}
+@media (max-width: 800px) {
+  .Notifications {
+    width: 60vw;
+  }
+  .notifWrapper {
+    width: 50vw;
+    min-width: 50vw;
+    max-width: 50vw;
+  }
+}

@@ -183,6 +183,7 @@
 @media (max-width: 1200px) {
   .releaseTrackListWrapper {
     width: 101%;
+    border-radius: unset;
   }
   .fakeLayer {
     flex-direction: column;
@@ -195,5 +196,10 @@
   }
   #ExitAlbumBtn {
     display: block;
+  }
+  #albumCover {
+    width: auto;
+    height: 60%;
+    object-fit: cover;
   }
 }

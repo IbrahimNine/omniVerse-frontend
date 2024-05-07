@@ -69,7 +69,7 @@ function MediaPlayer() {
       <div className="MediaPlayer">
         <div id="albumImageWrapper">
           <img
-            src={"/default3.png"}
+            src={"/Default3.png"}
             alt=""
             style={{
               display: isLoading ? "block" : "none",
@@ -79,7 +79,7 @@ function MediaPlayer() {
             src={
               trackData?.releaseData?.images
                 ? trackData?.releaseData?.images[0]?.uri
-                : "/default3.png"
+                : "/Default3.png"
             }
             alt=""
             style={{

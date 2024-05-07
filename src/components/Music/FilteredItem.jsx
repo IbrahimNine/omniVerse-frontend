@@ -83,7 +83,7 @@ function FilteredItem({ item, showTracksAlone }) {
           }}
         /> */}
         <img
-          src="/default3.png"
+          src="/Default3.png"
           alt="pic"
           className="FilteredItemPic"
           style={{
@@ -95,7 +95,7 @@ function FilteredItem({ item, showTracksAlone }) {
           data-src={item.cover_image}
           src={
             item.cover_image.includes("https://st.discogs.com/")
-              ? "/default3.png"
+              ? "/Default3.png"
               : item.cover_image
           }
           alt="pic"

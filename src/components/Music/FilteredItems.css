@@ -86,3 +86,12 @@
 #backToTop:hover {
   filter: drop-shadow(0 0 10px white);
 }
+
+@media (max-width: 800px) {
+  .FilteredItems {
+    padding: 1% 0%;
+  }
+  .ItemCard {
+    width: 180px;
+  }
+}

@@ -116,3 +116,8 @@
   align-items: center;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .slider-container {
+    margin: -2% -7% -2% -7%;
+  }
+}

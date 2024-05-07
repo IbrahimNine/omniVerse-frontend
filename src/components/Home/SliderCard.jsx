@@ -66,7 +66,7 @@ function SliderCard({ item, filterBy }) {
         </svg>
       )}
       <img
-        src="/default3.png"
+        src="/Default3.png"
         alt="pic"
         style={{
           borderRadius: filterBy === "artist" ? "100px" : "5px",
@@ -76,7 +76,7 @@ function SliderCard({ item, filterBy }) {
       <img
         src={
           item.cover_image.includes("https://st.discogs.com/")
-            ? "/default3.png"
+            ? "/Default3.png"
             : item.cover_image
         }
         alt="pic"

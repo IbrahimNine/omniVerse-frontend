@@ -233,6 +233,7 @@
 #MobileProfileLink {
   display: none;
 }
+
 @media (max-width: 1200px) {
   #MobileProfileLink {
     display: flex;
@@ -243,10 +244,30 @@
   .SearchBar {
     margin-left: 0;
   }
-  /* .navLinks {
-    width: 300px;
+}
+@media (max-width: 800px) {
+  .Navbar {
+    flex-wrap: wrap;
+  }
+  #brand {
+    width: 30%;
+  }
+  .navLinks {
+    width: 70%;
+  }
+  .navLinksLayer {
+    width: inherit;
   }
   .navLinks div a {
-    width: 45%;
-  } */
+    width: 50%;
+  }
+
+  .NavItemMiddle {
+    order: 1;
+    width: 100%;
+    height: 45px;
+  }
+  .userOptions {
+    right: 6.3%;
+  }
 }

@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { useFiltersContext } from "../../contexts/FiltersContext";
 import { useLocation, useNavigate } from "react-router-dom";
 
-function SearchBar() {
-  const [showSearch, setShowSearch] = useState(false);
+function SearchBar({ showSearch, setShowSearch }) {
   const [globalSearchInput, setGlobalSearchinput] = useState("");
   const { setGlobalSearch, setFilterSet } = useFiltersContext();
   const navigate = useNavigate();
@@ -44,7 +43,7 @@ function SearchBar() {
   };
 
   return (
-    <div className="SearchBar">
+    <div className="SearchBar NavItemMiddle">
       {!showSearch && (
         <button id="searchButton" onClick={showSearchHandler}>
           <svg

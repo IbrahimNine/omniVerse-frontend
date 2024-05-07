@@ -104,7 +104,7 @@ function Album() {
                 /> */}
                 <img
                   id="albumCover"
-                  src="/default3.png"
+                  src="/Default3.png"
                   alt="Album cover"
                   style={{
                     display: isLoading ? "block" : "none",
@@ -115,7 +115,7 @@ function Album() {
                   src={
                     releaseData.images && releaseData.images[0]?.uri
                       ? releaseData.images && releaseData.images[0]?.uri
-                      : "/default3.png"
+                      : "/Default3.png"
                   }
                   alt="Album cover"
                   style={{
@@ -176,7 +176,7 @@ function Album() {
                                     releaseData.images &&
                                     releaseData.images[0]?.uri
                                       ? releaseData.images[0]?.uri
-                                      : "/default3.png",
+                                      : "/Default3.png",
                                   elementTitle: releaseData.title,
                                   isArtist: false,
                                 },
@@ -210,7 +210,7 @@ function Album() {
                                   releaseData.images &&
                                   releaseData.images[0]?.uri
                                     ? releaseData.images[0]?.uri
-                                    : "/default3.png",
+                                    : "/Default3.png",
                                 elementTitle: releaseData.title,
                                 isArtist: false,
                               },

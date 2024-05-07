@@ -15,3 +15,8 @@
     margin-bottom: 25%;
   }
 }
+@media (max-width: 800px) {
+  .intro {
+    background-image: unset !important;
+  }
+}

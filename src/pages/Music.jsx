@@ -5,7 +5,7 @@ import { useFiltersContext } from "../contexts/FiltersContext";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Music.css";
 
-function Music({ isVisible }) {
+function Music() {
   const { filterBy, setFilterBy } = useFiltersContext();
   const [visible, setVisible] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
@@ -44,12 +44,7 @@ function Music({ isVisible }) {
   }, []);
 
   return (
-    <div
-      className="Music"
-      style={
-        isVisible === false ? null : { height: "90vh", overflow: "hidden" }
-      }
-    >
+    <div className="Music">
       <Offcanvas visible={visible} setVisible={setVisible} />
       <AnimatePresence mode="wait">
         <motion.div

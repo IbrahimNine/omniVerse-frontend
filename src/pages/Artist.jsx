@@ -53,7 +53,7 @@ function Artist() {
           {artistData.images ? (
             <>
               <img
-                src="/default2.png"
+                src="/Default2.png"
                 alt="Artist"
                 style={{
                   display: isLoading ? "block" : "none",
@@ -71,7 +71,7 @@ function Artist() {
               />
             </>
           ) : (
-            <img src="/default2.png" alt="Artist" style={{ cursor: "unset" }} />
+            <img src="/Default2.png" alt="Artist" style={{ cursor: "unset" }} />
           )}
 
           <h3 id="ArtistName">{artistData.name}</h3>

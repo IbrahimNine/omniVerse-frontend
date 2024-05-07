@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import imgErrorHandler from "../utils/imgErrorHandler";
 import PlayedData from "../components/User/PlayedData";
 
-function User({ isVisible }) {
+function User() {
   const { getUserPlayedTracks, mostPlayedData } = usePlayedTracksContext();
   const { showTracks } = useReleaseContext();
   const { user } = useAuthContext();
@@ -34,12 +34,7 @@ function User({ isVisible }) {
   }, [user]);
 
   return (
-    <div
-      className="UserWrapper"
-      style={
-        isVisible === false ? null : { height: "70vh", overflow: "hidden" }
-      }
-    >
+    <div className="UserWrapper">
       <div className="User">
         <div className="UserDetailedDash">
           <div
@@ -72,7 +67,7 @@ function User({ isVisible }) {
                   <h3 className="styledTitle">Last 7 days top record</h3>
                   <div className="mostPlayed">
                     <img
-                      src="/default3.png"
+                      src="/Default3.png"
                       alt=""
                       className="mostPlayedImg"
                       style={{
@@ -81,7 +76,7 @@ function User({ isVisible }) {
                     />
                     <img
                       src={
-                        mostPlayedData?.weekly.trackAlbumPic || "/default3.png"
+                        mostPlayedData?.weekly.trackAlbumPic || "/Default3.png"
                       }
                       alt=""
                       className="mostPlayedImg"
@@ -128,7 +123,7 @@ function User({ isVisible }) {
                   <h3 className="styledTitle">Last 30 days top record</h3>
                   <div className="mostPlayed">
                     <img
-                      src="/default3.png"
+                      src="/Default3.png"
                       alt=""
                       className="mostPlayedImg"
                       style={{
@@ -137,7 +132,7 @@ function User({ isVisible }) {
                     />
                     <img
                       src={
-                        mostPlayedData?.monthly.trackAlbumPic || "/default3.png"
+                        mostPlayedData?.monthly.trackAlbumPic || "/Default3.png"
                       }
                       alt=""
                       className="mostPlayedImg"
@@ -181,7 +176,7 @@ function User({ isVisible }) {
                   <h3 className="styledTitle">Last 365 days top record</h3>
                   <div className="mostPlayed">
                     <img
-                      src="/default3.png"
+                      src="/Default3.png"
                       alt=""
                       className="mostPlayedImg"
                       style={{
@@ -190,7 +185,7 @@ function User({ isVisible }) {
                     />
                     <img
                       src={
-                        mostPlayedData?.yearly.trackAlbumPic || "/default3.png"
+                        mostPlayedData?.yearly.trackAlbumPic || "/Default3.png"
                       }
                       alt=""
                       className="mostPlayedImg"

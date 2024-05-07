@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const { authLogout, setShowSettings, user } = useAuthContext();
+  const [showSearch, setShowSearch] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -24,9 +25,9 @@ function Navbar() {
       <Link to="/" id="brand">
         <img src="/omniVerseLogo_6.png" alt="BrandLogo" />
       </Link>
-      <SearchBar />
+      <SearchBar showSearch={showSearch} setShowSearch={setShowSearch} />
       <div className="navLinks">
-        <div>
+        <div className="navLinksLayer">
           <NavLink to="/music">Discover</NavLink>
           <NavLink to="/collections">Collections</NavLink>
         </div>

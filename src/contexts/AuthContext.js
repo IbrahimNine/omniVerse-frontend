@@ -6,7 +6,7 @@ const AuthContext = createContext();
 export const useAuthContext = () => useContext(AuthContext);
 
 export function AuthContextProvider({ children }) {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState();
   const [loading, setLoading] = useState(false);
   const [deleteLoading, setDeleteLoading] = useState(false);
   const [updateLoading, setUpdateLoading] = useState(false);
@@ -100,7 +100,7 @@ export function AuthContextProvider({ children }) {
         } else {
           console.log(err);
         }
-      }); 
+      });
   }, [baseURL]);
 
   //________________________________________________________________________________________

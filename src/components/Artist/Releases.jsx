@@ -35,14 +35,14 @@ function Releases({ index, release }) {
           alt="pic"
         /> */}
         <img
-          src="/default3.png"
+          src="/Default3.png"
           alt="Album cover"
           style={{
             display: isLoading ? "block" : "none",
           }}
         />
         <img
-          src={release.thumb ? release.thumb : "/default3.png"}
+          src={release.thumb ? release.thumb : "/Default3.png"}
           alt="Album cover"
           style={{
             display: isLoading ? "none" : "block",

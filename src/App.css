@@ -131,10 +131,17 @@ body {
   }
   .Login form,
   .Register form {
-    width: 478px;
+    width: 550px;
+    max-width: 100%;
   }
   .Login button,
   .Register button {
     height: 55px;
+  }
+}
+@media (max-width: 800px) {
+  .Login form,
+  .Register form {
+    width: 100%;
   }
 }
