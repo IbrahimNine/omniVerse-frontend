@@ -103,6 +103,9 @@
   border-radius: 5px;
   pointer-events: none;
 }
+.LastPlayedTracks {
+  cursor: pointer;
+}
 
 @media (max-width: 1200px) {
   .volumeSet {

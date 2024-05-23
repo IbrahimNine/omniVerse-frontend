@@ -16,7 +16,7 @@ function Hero() {
     <div className="HeroWrapper">
       <div className="Hero">
         <div className="gradient"></div>
-        <h1>Discover, Collect, Expend</h1>
+        <h1>Discover, Collect, Expand</h1>
       </div>
     </div>
   );

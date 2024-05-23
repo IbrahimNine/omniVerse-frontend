@@ -6,7 +6,6 @@ import FullSizePhoto from "../components/Artist/FullSizePhoto";
 import { useArtistContext } from "../contexts/ArtistContext";
 import imgErrorHandler from "../utils/imgErrorHandler";
 
-
 function Artist() {
   const [isLoading, setIsLoading] = useState(true);
   const artistId = useParams().id;
@@ -60,7 +59,11 @@ function Artist() {
                 }}
               />
               <img
-                src={artistData.images[0].uri}
+                src={
+                  artistData.images[0].uri
+                    ? artistData.images[0].uri
+                    : "/Default3.png"
+                }
                 alt="Artist"
                 onClick={() => setShowFullSize(!showFullSize)}
                 style={{

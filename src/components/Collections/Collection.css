@@ -174,11 +174,24 @@
   display: inline;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .editBtn {
     display: inline;
   }
   .collected-item-title {
     height: 100%;
+  }
+  .FirstLayerWrapper {
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .collectionBody button {
+    display: none;
+  }
+  .titleEditorForm {
+    width: 60%;
+  }
+  .collectionsWrapper {
+    padding-top: 20px;
   }
 }

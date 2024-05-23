@@ -120,4 +120,12 @@
   .slider-container {
     margin: -2% -7% -2% -7%;
   }
+  .TopChart button {
+    display: none;
+  }
+  .TopChart .slider-container {
+    margin: auto;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
 }

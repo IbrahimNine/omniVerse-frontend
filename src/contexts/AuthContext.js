@@ -6,12 +6,13 @@ const AuthContext = createContext();
 export const useAuthContext = () => useContext(AuthContext);
 
 export function AuthContextProvider({ children }) {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
   const [deleteLoading, setDeleteLoading] = useState(false);
   const [updateLoading, setUpdateLoading] = useState(false);
   const [noticMsg, setNoticMsg] = useState("");
   const [showSettings, setShowSettings] = useState(false);
+  const [showOnQueue,setShowOnQueue] = useState(false)
 
   const navigate = useNavigate();
 
@@ -69,10 +70,12 @@ export function AuthContextProvider({ children }) {
     axios
       .delete(`${baseURL}/api/auth/logout`, {
         withCredentials: true,
+        
       })
       .then((res) => {
         if (res.data.status === "success") {
           setUser(null);
+          setShowOnQueue(false);
           navigate("/");
         } else if (res.data.status === "fail") {
           setNoticMsg(res.data.data);
@@ -229,6 +232,8 @@ export function AuthContextProvider({ children }) {
         updateLoading,
         updatePassword,
         updateUserPic,
+        showOnQueue,
+        setShowOnQueue,
       }}
     >
       {children}

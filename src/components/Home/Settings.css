@@ -79,12 +79,12 @@
   text-align: center;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 1px 10px rgba(128, 128, 128, 0.226);
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 .Settings button:hover {
   background-color: rgba(0, 4, 24, 0.5);
+  box-shadow: 0 1px 10px rgba(128, 128, 128, 0.226);
 }
 #unableSubmit {
   cursor: unset;
